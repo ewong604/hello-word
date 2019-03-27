@@ -37,11 +37,7 @@ hbs.registerHelper('message', (text) => {
 //     next();
 // });
 
-// app.use((request, response, next) => {
-//     response.render('error.hbs', {
-//
-//     });
-// });
+
 
 app.get('/main', (request, response) => {
     response.render('main.hbs', {
@@ -104,6 +100,12 @@ app.get('/currency', async (request, response) => {
         }
 
     }
+});
+
+app.use((request, response, next) => {
+    response.render('error.hbs', {
+
+    });
 });
 
 app.get('/404', (request, response) => {
