@@ -43,7 +43,7 @@ hbs.registerHelper('message', (text) => {
 //     });
 // });
 
-app.get('/main', (request, response) => {
+app.get('/', (request, response) => {
     response.render('main.hbs', {
         title: 'Main page',
         year: new Date().getFullYear(),
