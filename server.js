@@ -37,11 +37,11 @@ hbs.registerHelper('message', (text) => {
 //     next();
 // });
 
-app.use((request, response, next) => {
-    response.render('error.hbs', {
-
-    });
-});
+// app.use((request, response, next) => {
+//     response.render('error.hbs', {
+//
+//     });
+// });
 
 app.get('/main', (request, response) => {
     response.render('main.hbs', {
