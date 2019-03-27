@@ -1,6 +1,2 @@
 node_modules/
 server.log
-public/
-views/
-package-lock.json
-server.js
